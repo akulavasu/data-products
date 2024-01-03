@@ -2,7 +2,7 @@ analytics_user: analytics
 analytics_group: analytics
 spark_output_temp_dir: /mount/data/analytics/tmp/
 
-bucket: "telemetry-data-store"
+bucket: "{{cloud_storage_telemetry_bucketname}}"
 secor_bucket: "telemetry-data-store"
 dp_object_store_type: "{{cloud_service_provider}}"
 dp_raw_telemetry_backup_location: "unique/raw/"
