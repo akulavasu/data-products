@@ -6,7 +6,7 @@
     - always
 
 - name: Ensure oci oss bucket exists
-  command: "/home/{{analytics_user}}/bin/oci os bucket get --name {{ bucket }}"
+  command: "/home/{{analytics_user}}/bin/oci os bucket get --name {{ bucket }} --auth instance_principal"
   register: check_bucket
   when: dp_object_store_type == "oci"
   tags:
